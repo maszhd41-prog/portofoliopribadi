@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Zahid Syahbana Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="layout">
+
+  <!-- ========== HEADER ========== -->
+  <div id="header">
+    <div class="header-left">
+      <div class="header-brand">Zahid <span class="accent">Syahbana</span></div>
+      <div class="header-tagline">Portfolio Pribadi <span class="cursor"></span></div>
+    </div>
+    <div class="header-right">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Tersedia untuk proyek
+      </div>
+      <div class="header-nim">NIM: 25.230.0155</div>
+    </div>
+  </div>
+
+  <!-- ========== MENU ========== -->
+  <div id="menu">
+    <ul>
+      <li>
+        <a href="index.html" class="nav-link">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6-.354.353V14.5A1.5 1.5 0 0 0 2.5 16h4a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5h4a1.5 1.5 0 0 0 1.5-1.5V7.5l-.354-.354-6-6z"/></svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="profil.html" class="nav-link">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.029 10 8 10c-2.029 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/></svg>
+          About Me
+        </a>
+      </li>
+      <li>
+        <a href="kontak.html" class="nav-link active">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/></svg>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ========== RUNNING TEXT ========== -->
+  <div id="runningtext">
+    <div class="marquee-label">LIVE</div>
+    <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+      🚀 &nbsp;Selamat datang di portfolio Zahid Syahbana &nbsp; · &nbsp; Let's build something amazing together! &nbsp; · &nbsp; Open to collaboration
+    </marquee>
+  </div>
+
+  <!-- ========================================================
+       KONTAK
+       ======================================================== -->
+  <div class="page-wrap">
+    <div id="page-isi">
+      <a href="index.html" class="back-btn">← Kembali</a>
+      <h2>Hubungi Saya</h2>
+
+      <p style="color:#57606a;font-size:13px;margin-bottom:20px;">
+        Ada proyek menarik atau ingin berkolaborasi? Isi form dibawah dan saya akan membalas jika sempat.
+      </p>
+
+      <div class="form-section">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nama Lengkap</label>
+            <input type="text" id="inputNama" placeholder="Nama lengkap Anda">
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" id="inputEmail" placeholder="email@contoh.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>No. HP</label>
+            <input type="text" id="inputHP" placeholder="08xx-xxxx-xxxx">
+          </div>
+          <div class="form-group">
+            <label>Kota</label>
+            <input type="text" id="inputKota" placeholder="Kota Anda">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Pesan</label>
+          <textarea id="inputPesan" placeholder="Ada proyek menarik? Ceritakan di sini..."></textarea>
+        </div>
+        <div class="form-actions">
+          <button class="btn-submit" onclick="kirimPesan()">
+            ✉ Kirim Pesan
+          </button>
+          <button class="btn-reset" onclick="resetForm()">
+            ↺ Reset
+          </button>
+        </div>
+        <div class="notif" id="notif">
+          ✓ &nbsp;Pesan berhasil terkirim! Saya akan membalas kalau sempat. Terima kasih!
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="page-isi-sidebar">
+      <div class="widget">
+        <h1 class="judulwidget">Proyek Terbaru</h1>
+        <ul>
+          <li><a href="pos1.html">Website E-Commerce</a></li>
+          <li><a href="pos2.html">Sistem Informasi Klinik Sehat Sentosa</a></li>
+          <li><a href="pos3.html">Praktikum Basis Data</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact info mini -->
+      <div class="widget">
+        <h1 class="judulwidget">Info Kontak</h1>
+        <div style="padding:12px 14px;display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#444c56;">
+            <span style="font-size:16px;">📍</span>
+            <span>Sawahjoho, Warungasem, Batang</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#444c56;">
+            <span style="font-size:16px;">🎓</span>
+            <span>Institut Widya Pratama</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#444c56;">
+            <span style="font-size:16px;">📸</span>
+            <a href="https://www.instagram.com/xc.syhbna" target="_blank" style="color:var(--teal);">@xc.syhbna</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <div id="footer">
+    <div class="footer-copy">
+      <span>© 2024</span>
+      <span class="footer-dot">·</span>
+      <span>M.Zahid Syahbana</span>
+      <span class="footer-dot">·</span>
+      <span>25.230.0155</span>
+      <span class="footer-dot">·</span>
+      <span>Institut Widya Pratama</span>
+    </div>
+    <div class="footer-links">
+      <a href="profil.html">About</a>
+      <a href="kontak.html">Contact</a>
+    </div>
+  </div>
+
+</div><!-- /#layout -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function kirimPesan() {
+    document.getElementById('notif').style.display = 'block';
+  }
+  function resetForm() {
+    document.getElementById('notif').style.display = 'none';
+    document.getElementById('inputNama').value = '';
+    document.getElementById('inputEmail').value = '';
+    document.getElementById('inputHP').value = '';
+    document.getElementById('inputKota').value = '';
+    document.getElementById('inputPesan').value = '';
+  }
+</script>
+</body>
+</html>

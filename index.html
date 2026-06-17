@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zahid Syahbana — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="layout">
+
+  <!-- ========== HEADER ========== -->
+  <div id="header">
+    <div class="header-left">
+      <div class="header-brand">Zahid <span class="accent">Syahbana</span></div>
+      <div class="header-tagline">Portfolio Pribadi <span class="cursor"></span></div>
+    </div>
+    <div class="header-right">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Tersedia untuk proyek
+      </div>
+      <div class="header-nim">NIM: 25.230.0155</div>
+    </div>
+  </div>
+
+  <!-- ========== MENU ========== -->
+  <div id="menu">
+    <ul>
+      <li>
+        <a href="index.html" class="nav-link active">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6-.354.353V14.5A1.5 1.5 0 0 0 2.5 16h4a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5h4a1.5 1.5 0 0 0 1.5-1.5V7.5l-.354-.354-6-6z"/></svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="profil.html" class="nav-link">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.029 10 8 10c-2.029 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/></svg>
+          About Me
+        </a>
+      </li>
+      <li>
+        <a href="kontak.html" class="nav-link">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/></svg>
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ========== RUNNING TEXT ========== -->
+  <div id="runningtext">
+    <div class="marquee-label">LIVE</div>
+    <marquee behavior="scroll" scrollamount="3"
+             onmouseover="this.stop();" onmouseout="this.start();"
+             direction="left">
+      🚀 &nbsp;Selamat datang di portfolio Zahid Syahbana &nbsp; · &nbsp; Mahasiswa Sistem Informasi — Institut Widya Pratama &nbsp; · &nbsp; Let's build something amazing together! &nbsp; · &nbsp; Open to collaboration
+    </marquee>
+  </div>
+
+  <!-- ========================================================
+       HOME PAGE
+       ======================================================== -->
+  <div class="main-content">
+
+    <!-- ISI -->
+    <div id="isi">
+
+      <!-- Intro banner -->
+      <div class="d-flex align-items-center gap-3 mb-4 p-3"
+           style="background:#f6f8ff;border:1px solid #e0e6f5;border-radius:8px;border-left:4px solid var(--teal);">
+        <div style="font-size:32px;flex-shrink:0;">👋</div>
+        <div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:#0d1117;margin-bottom:2px;">
+            Halo! Semuanya
+          </div>
+          <div style="font-size:12.5px;color:#57606a;line-height:1.5;">
+            Selamat datang di portfolio saya! Di sini saya berbagi proyek, pengalaman, dan perjalanan saya sebagai mahasiswa Sistem Informasi di Institut Widya Pratama.
+          </div>
+        </div>
+      </div>
+
+      <!-- Post Cards -->
+      <div class="post-card">
+        <div class="post-card-thumb">
+          <img src="gambar 1.png" class="gambardepan">
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag">Proyek #01 · Web Development</div>
+          <div class="post-card-title">MEMBUAT WEBSITE E-COMMERCE "KARYA REMAJA"</div>
+          <div class="post-card-excerpt">
+            Website Karya Remaja merupakan proyek perancangan sistem e-commerce untuk pemasaran produk fashion berbahan kulit secara digital. Produk meliputi sepatu, tas, sandal, sabuk, dan aksesoris fashion lainnya...
+          </div>
+          <a href="pos1.html" class="read-more">Baca Selengkapnya →</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-card-thumb">
+          <img src="gambar 2.png" class="gambardepan">
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag">Proyek #02 · Information System</div>
+          <div class="post-card-title">WEBSITE KLINIK SEHAT SENTOSA</div>
+          <div class="post-card-excerpt">
+            Website informasi kesehatan yang mempermudah masyarakat memperoleh informasi layanan klinik: profil, jadwal dokter, layanan kesehatan, kontak, dan lokasi klinik secara digital...
+          </div>
+          <a href="pos2.html" class="read-more">Baca Selengkapnya →</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-card-thumb">
+         <img src="gambar 3.png" class="gambardepan">
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag">Proyek #03 · Database</div>
+          <div class="post-card-title">ANALISIS KEBUTUHAN DATA — PRAKTIKUM BASIS DATA</div>
+          <div class="post-card-excerpt">
+            Serangkaian praktikum perancangan, pengelolaan, dan implementasi basis data menggunakan MySQL. Dipelajari bagaimana data disimpan, diorganisasikan, dan dikelola secara efektif...
+          </div>
+          <a href="pos3.html" class="read-more">Baca Selengkapnya →</a>
+        </div>
+      </div>
+
+    </div><!-- /#isi -->
+
+    <!-- SIDEBAR -->
+    <div id="sidebar">
+
+      <!-- Hire Banner -->
+      <div class="widget mb-3">
+        <a href="https://www.instagram.com/xc.syhbna?igsh=eHhhMjQ4cThoZTU1&utm_source=qr" target="_blank" class="iklan">
+          <div class="iklan-grid"></div>
+          <div class="iklan-content">
+            <div class="iklan-icon">📲</div>
+            <div class="iklan-title">Hire &amp;<br>Social Media</div>
+            <div class="iklan-cta">Instagram →</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Recent Projects -->
+      <div class="widget">
+        <h1 class="judulwidget">Proyek Terbaru</h1>
+        <ul>
+          <li><a href="pos1.html">Website E-Commerce</a></li>
+          <li><a href="pos2.html">Sistem Informasi Klinik Sehat Sentosa</a></li>
+          <li><a href="pos3.html">Praktikum Basis Data</a></li>
+        </ul>
+      </div>
+
+      <!-- Skills -->
+      <div class="widget">
+        <h1 class="judulwidget">Skills</h1>
+        <div class="skill-bar-wrap">
+          <div class="skill-item">
+            <div class="skill-label"><span>HTML / CSS</span><span class="skill-pct">50%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:50%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>MySQL</span><span class="skill-pct">75%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Microsoft Word</span><span class="skill-pct">88%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:88%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>UI / Figma</span><span class="skill-pct">40%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:40%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /#sidebar -->
+
+  </div><!-- /.main-content -->
+
+  <!-- ========== FOOTER ========== -->
+  <div id="footer">
+    <div class="footer-copy">
+      <span>© 2024</span>
+      <span class="footer-dot">·</span>
+      <span>M.Zahid Syahbana</span>
+      <span class="footer-dot">·</span>
+      <span>25.230.0155</span>
+      <span class="footer-dot">·</span>
+      <span>Institut Widya Pratama</span>
+    </div>
+    <div class="footer-links">
+      <a href="profil.html">About</a>
+      <a href="kontak.html">Contact</a>
+      <a href="https://www.instagram.com/xc.syhbna" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+</div><!-- /#layout -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
